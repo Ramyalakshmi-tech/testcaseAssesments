@@ -1,30 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220409 22:51:45.818" rpa="false" schemaversion="3">
-<suite id="s1" name="Admin" source="C:\Users\ADMIN\PycharmProjects\pythonProject\pythonProject33\Tests\CrimeManagement\FunctionalTestSuite\admin.robot">
-<test id="s1-t1" name="Admin Login test" line="9">
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220409 23:45:14.566" rpa="false" schemaversion="3">
+<suite id="s1" name="User" source="C:\Users\ADMIN\PycharmProjects\pythonProject\pythonProject33\Tests\CrimeManagement\FunctionalTestSuite\user.robot">
+<test id="s1-t1" name="User Registeration test" line="10">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${web_url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220409 22:51:52.070" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5000'.</msg>
-<msg timestamp="20220409 22:52:43.902" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220409 22:52:43.902" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+<msg timestamp="20220409 23:45:15.437" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5000'.</msg>
+<status status="PASS" starttime="20220409 23:45:15.437" endtime="20220409 23:45:28.795"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220409 23:45:28.805" endtime="20220409 23:45:29.697"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:name</arg>
+<arg>Ramyalakshmi.M</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:29.697" level="INFO">Typing text 'Ramyalakshmi.M' into text field 'name:name'.</msg>
+<status status="PASS" starttime="20220409 23:45:29.697" endtime="20220409 23:45:30.964"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:31.968" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220409 23:45:30.964" endtime="20220409 23:45:31.968"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:address</arg>
+<arg>36/2,Kamarajapuram 6 street,Pudukkottai</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:31.968" level="INFO">Typing text '36/2,Kamarajapuram 6 street,Pudukkottai' into text field 'name:address'.</msg>
+<status status="PASS" starttime="20220409 23:45:31.968" endtime="20220409 23:45:32.637"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:33.642" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220409 23:45:32.637" endtime="20220409 23:45:33.642"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:33.657" level="INFO">Typing text 'ramyagandhi16@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20220409 23:45:33.642" endtime="20220409 23:45:34.055"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:35.073" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220409 23:45:34.070" endtime="20220409 23:45:35.073"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:phone</arg>
+<arg>9585069613</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:35.073" level="INFO">Typing text '9585069613' into text field 'name:phone'.</msg>
+<status status="PASS" starttime="20220409 23:45:35.073" endtime="20220409 23:45:35.475"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:36.500" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220409 23:45:35.491" endtime="20220409 23:45:36.500"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:36.506" level="INFO">Typing text '654321' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20220409 23:45:36.506" endtime="20220409 23:45:36.780"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:37.799" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220409 23:45:36.788" endtime="20220409 23:45:37.799"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//html/body/div/div/div/form/table/tbody/tr[6]/td[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:37.799" level="INFO">Clicking button 'xpath=//html/body/div/div/div/form/table/tbody/tr[6]/td[2]/button'.</msg>
+<status status="PASS" starttime="20220409 23:45:37.799" endtime="20220409 23:45:38.605"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:39.607" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220409 23:45:38.605" endtime="20220409 23:45:39.607"/>
+</kw>
+<doc>Can user able to register?</doc>
+<tag>user</tag>
+<status status="PASS" starttime="20220409 23:45:15.437" endtime="20220409 23:45:39.607"/>
+</test>
+<test id="s1-t2" name="User Login test" line="28">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:39.607" level="INFO">Typing text 'ramyagandhi16@gmail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20220409 23:45:39.607" endtime="20220409 23:45:40.023"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:41.032" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220409 23:45:40.031" endtime="20220409 23:45:41.032"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:41.032" level="INFO">Typing text '654321' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20220409 23:45:41.032" endtime="20220409 23:45:41.330"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:42.344" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220409 23:45:41.338" endtime="20220409 23:45:42.344"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//html/body/div/div/div/form/table/tbody/tr[3]/td[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:42.344" level="INFO">Clicking button 'xpath=//html/body/div/div/div/form/table/tbody/tr[3]/td[2]/button'.</msg>
+<status status="PASS" starttime="20220409 23:45:42.344" endtime="20220409 23:45:43.361"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:48.370" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220409 23:45:43.361" endtime="20220409 23:45:48.370"/>
+</kw>
+<doc>Once Registered,user can able to login?</doc>
+<tag>user</tag>
+<status status="PASS" starttime="20220409 23:45:39.607" endtime="20220409 23:45:48.370"/>
+</test>
+<test id="s1-t3" name="Report Crime test" line="38">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//html/body/nav/a[1]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:48.370" level="INFO">Clicking link 'xpath=//html/body/nav/a[1]'.</msg>
+<status status="PASS" starttime="20220409 23:45:48.370" endtime="20220409 23:45:48.911"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:49.928" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220409 23:45:48.919" endtime="20220409 23:45:49.928"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:date</arg>
+<arg>9/4/22</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:49.928" level="INFO">Typing text '9/4/22' into text field 'name:date'.</msg>
+<status status="PASS" starttime="20220409 23:45:49.928" endtime="20220409 23:45:50.276"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:51.306" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220409 23:45:50.295" endtime="20220409 23:45:51.306"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:remark</arg>
+<arg>About theft</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:51.306" level="INFO">Typing text 'About theft' into text field 'name:remark'.</msg>
+<status status="PASS" starttime="20220409 23:45:51.306" endtime="20220409 23:45:51.728"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:52.734" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220409 23:45:51.728" endtime="20220409 23:45:52.734"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:description</arg>
+<arg>I need help from your side for the theft</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:52.734" level="INFO">Typing text 'I need help from your side for the theft' into text field 'name:description'.</msg>
+<status status="PASS" starttime="20220409 23:45:52.734" endtime="20220409 23:45:53.417"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:45:56.431" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220409 23:45:53.417" endtime="20220409 23:45:56.431"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//html/body/div/div/div/form/table/tbody/tr[4]/td[2]/center/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220409 23:45:56.431" level="INFO">Clicking button 'xpath=//html/body/div/div/div/form/table/tbody/tr[4]/td[2]/center/button'.</msg>
+<msg timestamp="20220409 23:45:57.885" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220409 23:45:57.885" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (819, 669)
   (Session info: chrome=100.0.4896.75)
 Stacktrace:
 Backtrace:
 	Ordinal0 [0x009E7413+2389011]
 	Ordinal0 [0x00979F61+1941345]
 	Ordinal0 [0x0086C658+837208]
-	Ordinal0 [0x00868F28+823080]
-	Ordinal0 [0x0085E27D+778877]
-	Ordinal0 [0x0085EE3D+781885]
-	Ordinal0 [0x0085E48A+779402]
-	Ordinal0 [0x0085DA86+776838]
-	Ordinal0 [0x0085C995+772501]
-	Ordinal0 [0x0085CE6D+773741]
-	Ordinal0 [0x0086DE5A+843354]
-	Ordinal0 [0x008C49BD+1198525]
+	Ordinal0 [0x0089F8AF+1046703]
+	Ordinal0 [0x0089D8D6+1038550]
+	Ordinal0 [0x0089B5EB+1029611]
+	Ordinal0 [0x0089A359+1024857]
+	Ordinal0 [0x0088FF93+982931]
 	Ordinal0 [0x008B414C+1130828]
+	Ordinal0 [0x0088F974+981364]
+	Ordinal0 [0x008B4364+1131364]
 	Ordinal0 [0x008C4302+1196802]
 	Ordinal0 [0x008B3F66+1130342]
 	Ordinal0 [0x0088E546+976198]
@@ -41,63 +225,30 @@ Backtrace:
 	RtlGetAppContainerNamedObjectPath [0x77CA7A7E+286]
 	RtlGetAppContainerNamedObjectPath [0x77CA7A4E+238]
 </msg>
-<status status="FAIL" starttime="20220409 22:51:52.070" endtime="20220409 22:52:48.707"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" starttime="20220409 22:52:48.709" endtime="20220409 22:52:48.709"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:username</arg>
-<arg>admin</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220409 22:52:48.711" endtime="20220409 22:52:48.711"/>
+<status status="FAIL" starttime="20220409 23:45:56.431" endtime="20220409 23:45:58.016"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220409 22:52:48.711" endtime="20220409 22:52:48.711"/>
+<status status="NOT RUN" starttime="20220409 23:45:58.016" endtime="20220409 23:45:58.016"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:password</arg>
-<arg>654321</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220409 22:52:48.711" endtime="20220409 22:52:48.711"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220409 22:52:48.711" endtime="20220409 22:52:48.711"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath=//html/body/div/div/div/form/table/tbody/tr[3]/td[2]/button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220409 22:52:48.711" endtime="20220409 22:52:48.711"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220409 22:52:48.711" endtime="20220409 22:52:48.711"/>
-</kw>
-<doc>Can admin able to login?</doc>
-<tag>admin</tag>
-<status status="FAIL" starttime="20220409 22:51:52.070" endtime="20220409 22:52:48.711">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+<doc>Can Register able to report crime?</doc>
+<tag>user</tag>
+<status status="FAIL" starttime="20220409 23:45:48.370" endtime="20220409 23:45:58.031">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (819, 669)
   (Session info: chrome=100.0.4896.75)
 Stacktrace:
 Backtrace:
 	Ordinal0 [0x009E7413+2389011]
 	Ordinal0 [0x00979F61+1941345]
 	Ordinal0 [0x0086C658+837208]
-	Ordinal0 [0x00868F28+823080]
-	Ordinal0 [0x0085E27D+778877]
-	Ordinal0 [0x0085EE3D+781885]
-	Ordinal0 [0x0085E48A+779402]
-	Ordinal0 [0x0085DA86+776838]
-	Ordinal0 [0x0085C995+772501]
-	Ordinal0 [0x0085CE6D+773741]
-	Ordinal0 [0x0086DE5A+843354]
-	Ordinal0 [0x008C49BD+1198525]
+	Ordinal0 [0x0089F8AF+1046703]
+	Ordinal0 [0x0089D8D6+1038550]
+	Ordinal0 [0x0089B5EB+1029611]
+	Ordinal0 [0x0089A359+1024857]
+	Ordinal0 [0x0088FF93+982931]
 	Ordinal0 [0x008B414C+1130828]
+	Ordinal0 [0x0088F974+981364]
+	Ordinal0 [0x008B4364+1131364]
 	Ordinal0 [0x008C4302+1196802]
 	Ordinal0 [0x008B3F66+1130342]
 	Ordinal0 [0x0088E546+976198]
@@ -115,75 +266,158 @@ Backtrace:
 	RtlGetAppContainerNamedObjectPath [0x77CA7A4E+238]
 </status>
 </test>
-<test id="s1-t2" name="View Report test" line="21">
+<test id="s1-t4" name="Edit User Profile test" line="52">
 <kw name="Click Link" library="SeleniumLibrary">
-<arg>xpath=//html/body/nav/a[1]</arg>
+<arg>xpath=//html/body/nav/a[2]</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220409 22:52:48.726" level="INFO">Clicking link 'xpath=//html/body/nav/a[1]'.</msg>
-<msg timestamp="20220409 22:52:49.110" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220409 22:52:49.110" level="FAIL">Link with locator 'xpath=//html/body/nav/a[1]' not found.</msg>
-<status status="FAIL" starttime="20220409 22:52:48.726" endtime="20220409 22:52:49.539"/>
+<msg timestamp="20220409 23:45:58.047" level="INFO">Clicking link 'xpath=//html/body/nav/a[2]'.</msg>
+<msg timestamp="20220409 23:45:59.430" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220409 23:45:59.430" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (170, -58)
+  (Session info: chrome=100.0.4896.75)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009E7413+2389011]
+	Ordinal0 [0x00979F61+1941345]
+	Ordinal0 [0x0086C658+837208]
+	Ordinal0 [0x0089F8AF+1046703]
+	Ordinal0 [0x0089D8D6+1038550]
+	Ordinal0 [0x0089B5EB+1029611]
+	Ordinal0 [0x0089A359+1024857]
+	Ordinal0 [0x0088FF93+982931]
+	Ordinal0 [0x008B414C+1130828]
+	Ordinal0 [0x0088F974+981364]
+	Ordinal0 [0x008B4364+1131364]
+	Ordinal0 [0x008C4302+1196802]
+	Ordinal0 [0x008B3F66+1130342]
+	Ordinal0 [0x0088E546+976198]
+	Ordinal0 [0x0088F456+980054]
+	GetHandleVerifier [0x00B99632+1727522]
+	GetHandleVerifier [0x00C4BA4D+2457661]
+	GetHandleVerifier [0x00A7EB81+569713]
+	GetHandleVerifier [0x00A7DD76+566118]
+	Ordinal0 [0x00980B2B+1968939]
+	Ordinal0 [0x00985988+1989000]
+	Ordinal0 [0x00985A75+1989237]
+	Ordinal0 [0x0098ECB1+2026673]
+	BaseThreadInitThunk [0x7795FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77CA7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77CA7A4E+238]
+</msg>
+<status status="FAIL" starttime="20220409 23:45:58.047" endtime="20220409 23:45:59.430"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:45:59.430" endtime="20220409 23:45:59.430"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:45:59.430" endtime="20220409 23:45:59.430"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:45:59.430" endtime="20220409 23:45:59.430"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//html/body/div/div/div/form[1]/table/tbody/tr[2]/td[2]/center/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:45:59.430" endtime="20220409 23:45:59.430"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220409 22:52:49.542" endtime="20220409 22:52:49.542"/>
+<status status="NOT RUN" starttime="20220409 23:45:59.445" endtime="20220409 23:45:59.445"/>
 </kw>
-<doc>Once admin logged in can able to view report?</doc>
-<tag>admin</tag>
-<status status="FAIL" starttime="20220409 22:52:48.726" endtime="20220409 22:52:49.547">Link with locator 'xpath=//html/body/nav/a[1]' not found.</status>
-</test>
-<test id="s1-t3" name="Filter With Date test" line="27">
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>xpath=//html/body/nav/a[2]</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220409 22:52:49.551" level="INFO">Clicking link 'xpath=//html/body/nav/a[2]'.</msg>
-<msg timestamp="20220409 22:52:49.694" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220409 22:52:49.694" level="FAIL">Link with locator 'xpath=//html/body/nav/a[2]' not found.</msg>
-<status status="FAIL" starttime="20220409 22:52:49.550" endtime="20220409 22:52:49.694"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:name</arg>
+<arg>Ramyalakshmi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:45:59.445" endtime="20220409 23:45:59.445"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220409 22:52:49.694" endtime="20220409 22:52:49.694"/>
+<status status="NOT RUN" starttime="20220409 23:45:59.445" endtime="20220409 23:45:59.445"/>
 </kw>
-<doc>Admin Able to Filter With Date?</doc>
-<tag>admin</tag>
-<status status="FAIL" starttime="20220409 22:52:49.549" endtime="20220409 22:52:49.694">Link with locator 'xpath=//html/body/nav/a[2]' not found.</status>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//html/body/div/div/div/form[2]/table/tbody/tr[6]/td[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:45:59.445" endtime="20220409 23:45:59.445"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:45:59.445" endtime="20220409 23:45:59.445"/>
+</kw>
+<doc>Register can view and modify account info?</doc>
+<tag>user</tag>
+<status status="FAIL" starttime="20220409 23:45:58.047" endtime="20220409 23:45:59.445">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (170, -58)
+  (Session info: chrome=100.0.4896.75)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009E7413+2389011]
+	Ordinal0 [0x00979F61+1941345]
+	Ordinal0 [0x0086C658+837208]
+	Ordinal0 [0x0089F8AF+1046703]
+	Ordinal0 [0x0089D8D6+1038550]
+	Ordinal0 [0x0089B5EB+1029611]
+	Ordinal0 [0x0089A359+1024857]
+	Ordinal0 [0x0088FF93+982931]
+	Ordinal0 [0x008B414C+1130828]
+	Ordinal0 [0x0088F974+981364]
+	Ordinal0 [0x008B4364+1131364]
+	Ordinal0 [0x008C4302+1196802]
+	Ordinal0 [0x008B3F66+1130342]
+	Ordinal0 [0x0088E546+976198]
+	Ordinal0 [0x0088F456+980054]
+	GetHandleVerifier [0x00B99632+1727522]
+	GetHandleVerifier [0x00C4BA4D+2457661]
+	GetHandleVerifier [0x00A7EB81+569713]
+	GetHandleVerifier [0x00A7DD76+566118]
+	Ordinal0 [0x00980B2B+1968939]
+	Ordinal0 [0x00985988+1989000]
+	Ordinal0 [0x00985A75+1989237]
+	Ordinal0 [0x0098ECB1+2026673]
+	BaseThreadInitThunk [0x7795FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77CA7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77CA7A4E+238]
+</status>
 </test>
-<test id="s1-t4" name="Admin Logout test" line="33">
+<test id="s1-t5" name="User Logout test" line="66">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>xpath=//html/body/nav/a[3]</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20220409 22:52:49.694" level="INFO">Clicking link 'xpath=//html/body/nav/a[3]'.</msg>
-<msg timestamp="20220409 22:52:50.058" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220409 22:52:50.058" level="FAIL">Link with locator 'xpath=//html/body/nav/a[3]' not found.</msg>
-<status status="FAIL" starttime="20220409 22:52:49.694" endtime="20220409 22:52:50.058"/>
+<msg timestamp="20220409 23:45:59.461" level="INFO">Clicking link 'xpath=//html/body/nav/a[3]'.</msg>
+<status status="PASS" starttime="20220409 23:45:59.445" endtime="20220409 23:46:00.362"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220409 22:52:50.111" endtime="20220409 22:52:50.111"/>
+<msg timestamp="20220409 23:46:02.375" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220409 23:46:00.362" endtime="20220409 23:46:02.375"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20220409 22:52:50.111" endtime="20220409 22:52:50.111"/>
+<status status="PASS" starttime="20220409 23:46:02.375" endtime="20220409 23:46:07.565"/>
 </kw>
-<doc>Can admin able to logout?</doc>
-<tag>admin</tag>
-<status status="FAIL" starttime="20220409 22:52:49.694" endtime="20220409 22:52:50.111">Link with locator 'xpath=//html/body/nav/a[3]' not found.</status>
+<doc>Is Register not able to access after logout</doc>
+<tag>user</tag>
+<status status="PASS" starttime="20220409 23:45:59.445" endtime="20220409 23:46:07.565"/>
 </test>
-<status status="FAIL" starttime="20220409 22:51:45.849" endtime="20220409 22:52:50.111"/>
+<status status="FAIL" starttime="20220409 23:45:14.566" endtime="20220409 23:46:07.565"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="4" skip="0">All Tests</stat>
+<stat pass="3" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="4" skip="0">admin</stat>
+<stat pass="3" fail="2" skip="0">user</stat>
 </tag>
 <suite>
-<stat pass="0" fail="4" skip="0" id="s1" name="Admin">Admin</stat>
+<stat pass="3" fail="2" skip="0" id="s1" name="User">User</stat>
 </suite>
 </statistics>
 <errors>

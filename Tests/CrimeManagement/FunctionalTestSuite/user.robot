@@ -40,11 +40,11 @@ Report Crime test
     [Tags]  user
     click link  xpath=//html/body/nav/a[1]
     sleep  1s
-    input text  name:date   6/4/22
+    input text  name:date   9/4/22
     sleep  1s
-    input text  name:remark  Lost My Pistol
+    input text  name:remark  About theft
     sleep   1s
-    input text  name:description    I have missed My Pistol on 05/04/2022. I request you to find it as soon as possible before some one use that in wrong way.
+    input text  name:description    I need help from your side for the theft
     sleep  3s
     click button  xpath=//html/body/div/div/div/form/table/tbody/tr[4]/td[2]/center/button
     sleep  1s
