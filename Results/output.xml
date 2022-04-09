@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220409 22:51:45.818" rpa="false" schemaversion="3">
+<suite id="s1" name="Admin" source="C:\Users\ADMIN\PycharmProjects\pythonProject\pythonProject33\Tests\CrimeManagement\FunctionalTestSuite\admin.robot">
+<test id="s1-t1" name="Admin Login test" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${web_url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220409 22:51:52.070" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5000'.</msg>
+<msg timestamp="20220409 22:52:43.902" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220409 22:52:43.902" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=100.0.4896.75)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009E7413+2389011]
+	Ordinal0 [0x00979F61+1941345]
+	Ordinal0 [0x0086C658+837208]
+	Ordinal0 [0x00868F28+823080]
+	Ordinal0 [0x0085E27D+778877]
+	Ordinal0 [0x0085EE3D+781885]
+	Ordinal0 [0x0085E48A+779402]
+	Ordinal0 [0x0085DA86+776838]
+	Ordinal0 [0x0085C995+772501]
+	Ordinal0 [0x0085CE6D+773741]
+	Ordinal0 [0x0086DE5A+843354]
+	Ordinal0 [0x008C49BD+1198525]
+	Ordinal0 [0x008B414C+1130828]
+	Ordinal0 [0x008C4302+1196802]
+	Ordinal0 [0x008B3F66+1130342]
+	Ordinal0 [0x0088E546+976198]
+	Ordinal0 [0x0088F456+980054]
+	GetHandleVerifier [0x00B99632+1727522]
+	GetHandleVerifier [0x00C4BA4D+2457661]
+	GetHandleVerifier [0x00A7EB81+569713]
+	GetHandleVerifier [0x00A7DD76+566118]
+	Ordinal0 [0x00980B2B+1968939]
+	Ordinal0 [0x00985988+1989000]
+	Ordinal0 [0x00985A75+1989237]
+	Ordinal0 [0x0098ECB1+2026673]
+	BaseThreadInitThunk [0x7795FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77CA7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77CA7A4E+238]
+</msg>
+<status status="FAIL" starttime="20220409 22:51:52.070" endtime="20220409 22:52:48.707"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220409 22:52:48.709" endtime="20220409 22:52:48.709"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:username</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 22:52:48.711" endtime="20220409 22:52:48.711"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 22:52:48.711" endtime="20220409 22:52:48.711"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>654321</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 22:52:48.711" endtime="20220409 22:52:48.711"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 22:52:48.711" endtime="20220409 22:52:48.711"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//html/body/div/div/div/form/table/tbody/tr[3]/td[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 22:52:48.711" endtime="20220409 22:52:48.711"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 22:52:48.711" endtime="20220409 22:52:48.711"/>
+</kw>
+<doc>Can admin able to login?</doc>
+<tag>admin</tag>
+<status status="FAIL" starttime="20220409 22:51:52.070" endtime="20220409 22:52:48.711">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=100.0.4896.75)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x009E7413+2389011]
+	Ordinal0 [0x00979F61+1941345]
+	Ordinal0 [0x0086C658+837208]
+	Ordinal0 [0x00868F28+823080]
+	Ordinal0 [0x0085E27D+778877]
+	Ordinal0 [0x0085EE3D+781885]
+	Ordinal0 [0x0085E48A+779402]
+	Ordinal0 [0x0085DA86+776838]
+	Ordinal0 [0x0085C995+772501]
+	Ordinal0 [0x0085CE6D+773741]
+	Ordinal0 [0x0086DE5A+843354]
+	Ordinal0 [0x008C49BD+1198525]
+	Ordinal0 [0x008B414C+1130828]
+	Ordinal0 [0x008C4302+1196802]
+	Ordinal0 [0x008B3F66+1130342]
+	Ordinal0 [0x0088E546+976198]
+	Ordinal0 [0x0088F456+980054]
+	GetHandleVerifier [0x00B99632+1727522]
+	GetHandleVerifier [0x00C4BA4D+2457661]
+	GetHandleVerifier [0x00A7EB81+569713]
+	GetHandleVerifier [0x00A7DD76+566118]
+	Ordinal0 [0x00980B2B+1968939]
+	Ordinal0 [0x00985988+1989000]
+	Ordinal0 [0x00985A75+1989237]
+	Ordinal0 [0x0098ECB1+2026673]
+	BaseThreadInitThunk [0x7795FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77CA7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77CA7A4E+238]
+</status>
+</test>
+<test id="s1-t2" name="View Report test" line="21">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//html/body/nav/a[1]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220409 22:52:48.726" level="INFO">Clicking link 'xpath=//html/body/nav/a[1]'.</msg>
+<msg timestamp="20220409 22:52:49.110" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220409 22:52:49.110" level="FAIL">Link with locator 'xpath=//html/body/nav/a[1]' not found.</msg>
+<status status="FAIL" starttime="20220409 22:52:48.726" endtime="20220409 22:52:49.539"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 22:52:49.542" endtime="20220409 22:52:49.542"/>
+</kw>
+<doc>Once admin logged in can able to view report?</doc>
+<tag>admin</tag>
+<status status="FAIL" starttime="20220409 22:52:48.726" endtime="20220409 22:52:49.547">Link with locator 'xpath=//html/body/nav/a[1]' not found.</status>
+</test>
+<test id="s1-t3" name="Filter With Date test" line="27">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//html/body/nav/a[2]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220409 22:52:49.551" level="INFO">Clicking link 'xpath=//html/body/nav/a[2]'.</msg>
+<msg timestamp="20220409 22:52:49.694" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220409 22:52:49.694" level="FAIL">Link with locator 'xpath=//html/body/nav/a[2]' not found.</msg>
+<status status="FAIL" starttime="20220409 22:52:49.550" endtime="20220409 22:52:49.694"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 22:52:49.694" endtime="20220409 22:52:49.694"/>
+</kw>
+<doc>Admin Able to Filter With Date?</doc>
+<tag>admin</tag>
+<status status="FAIL" starttime="20220409 22:52:49.549" endtime="20220409 22:52:49.694">Link with locator 'xpath=//html/body/nav/a[2]' not found.</status>
+</test>
+<test id="s1-t4" name="Admin Logout test" line="33">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//html/body/nav/a[3]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220409 22:52:49.694" level="INFO">Clicking link 'xpath=//html/body/nav/a[3]'.</msg>
+<msg timestamp="20220409 22:52:50.058" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220409 22:52:50.058" level="FAIL">Link with locator 'xpath=//html/body/nav/a[3]' not found.</msg>
+<status status="FAIL" starttime="20220409 22:52:49.694" endtime="20220409 22:52:50.058"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 22:52:50.111" endtime="20220409 22:52:50.111"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220409 22:52:50.111" endtime="20220409 22:52:50.111"/>
+</kw>
+<doc>Can admin able to logout?</doc>
+<tag>admin</tag>
+<status status="FAIL" starttime="20220409 22:52:49.694" endtime="20220409 22:52:50.111">Link with locator 'xpath=//html/body/nav/a[3]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220409 22:51:45.849" endtime="20220409 22:52:50.111"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="4" skip="0">admin</stat>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="Admin">Admin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
